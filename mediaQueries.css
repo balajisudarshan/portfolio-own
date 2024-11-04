@@ -1,0 +1,62 @@
+
+
+@media (max-width: 900px) {
+    .links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px   ;
+        left:0%;
+        width: 100%;
+        background-color: rgb(68, 11, 200);
+        padding: 1rem;
+        color: rgb(255, 255, 255);
+       
+    }
+
+    
+    .link {
+        margin-bottom: 3%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: 60px;
+        margin-bottom: 5%;
+        color: orange;
+    }
+    .link a{
+        font-size: auto;
+        color: rgb(255, 255, 255);
+        
+    }
+    .icon {
+        display: block;
+    }
+
+    .active {
+        display: flex;
+    }
+    .about-me-section{
+        display: none;
+        flex-direction: column;
+        align-items: center ;
+        justify-content: center;
+        
+    }
+    .about-me-section img{
+        margin-bottom: 5%;
+        margin-right: 2%;
+        width: 100%;
+    }
+    #projects{
+        margin-top: 20%;
+    }
+    .card-container{
+        width: 100%;
+    }
+    .project-card{
+        min-width: 70%;
+    }
+   
+    
+}

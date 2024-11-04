@@ -1,0 +1,75 @@
+#experience {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    margin-top: 10%;
+}
+#experience .heading {
+    text-align: center;
+    margin-bottom: 3%;
+    
+}
+#experience .heading p{
+    font-weight: lighter;
+}
+#experience .heading h1{
+    font-size: 3rem;
+}
+
+.container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+.card:hover{
+    transform: translateX(20px);
+    transform: translateY(-30px);
+    box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.list li span {
+    font-weight: bold;
+}
+
+.list li .check {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+}

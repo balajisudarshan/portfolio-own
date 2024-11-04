@@ -1,0 +1,38 @@
+#contact {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    margin: 0;
+    font-size:1.7rem;
+  }
+
+  .contact-section {
+    text-align: center;
+  }
+
+  .contact-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .contact-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #eee;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: .2s ease-in-out;
+  }
+  .contact-links a:nth-child(1):hover{
+    background-color: orange;
+  }
+  .contact-links a:nth-child(2):hover{
+    background-color:  #0077B5 ;
+    color: black;
+  }
+

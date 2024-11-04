@@ -1,0 +1,67 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 17vh;
+    
+}
+
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 0%;
+   
+}
+
+.link {
+    margin-right: 50px;
+}
+
+.link a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 2rem;
+    font-family: sans-serif;
+    position: relative;
+}
+
+
+.link a:hover {
+    color: #ccc;
+    text-decoration: underline  #ccc;
+    text-underline-offset: 20px;   
+}
+
+.icon {
+    display: none;
+    cursor: pointer;
+}
+
+.icon span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+}
+
