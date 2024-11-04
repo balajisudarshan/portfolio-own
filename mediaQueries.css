@@ -2,32 +2,43 @@
 
 @media (max-width: 900px) {
     .links {
-        display: none;
+        display: none; /* Hidden initially on small screens */
         flex-direction: column;
         position: absolute;
-        top: 90px   ;
-        left:0%;
+        top: 90px;
+        left: 0;
         width: 100%;
-        background-color: rgb(68, 11, 200);
+        background: linear-gradient(135deg, #ff9966, #ff5e62); /* Same gradient */
         padding: 1rem;
         color: rgb(255, 255, 255);
-       
+        z-index: 100;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        animation: slideDown 0.5s ease; /* Slide-down animation */
     }
 
-    
     .link {
-        margin-bottom: 3%;
+        margin: 5% 0;
         text-align: center;
-        align-items: center;
-        justify-content: center;
-        margin-left: 60px;
-        margin-bottom: 5%;
-        color: orange;
+        color: #fff;
+        width: 100%;
+        padding: 0.5rem;
+        transition: background-color 0.3s ease;
     }
-    .link a{
-        font-size: auto;
-        color: rgb(255, 255, 255);
-        
+
+    .link:hover {
+        background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+        border-radius: 5px;
+    }
+
+    .link a {
+        font-size: 1.5rem; /* Slightly larger font for mobile */
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+
+    .link a:hover {
+        color: #ffcc00; /* Bright hover effect */
     }
     .icon {
         display: block;
@@ -46,7 +57,32 @@
     .about-me-section img{
         margin-bottom: 5%;
         margin-right: 2%;
-        width: 100%;
+        width: 90%;
+    }
+    .block-card-container {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center align the cards */
+    }
+
+    .block-card {
+        width: 100%; /* Full width on mobile */
+        max-width: 100%; /* Ensures the card stretches to the container's width */
+        padding: 15px;
+        margin-bottom: 20px; /* Adds space between stacked cards */
+    }
+
+    /* Adjust font size for mobile readability */
+    .card-info h4, .card-info h5 {
+        font-size: 1.3rem;
+    }
+
+    .card-info p {
+        font-size: 0.9rem;
+    }
+
+    .info-text{
+        display: flex;
+        flex-direction: column;
     }
     #projects{
         margin-top: 20%;
@@ -59,4 +95,14 @@
     }
    
     
+}
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

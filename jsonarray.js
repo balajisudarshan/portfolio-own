@@ -7,6 +7,14 @@ var projectarray = [
       'livedemo' : 'https://balajisudarshan.github.io/netflix-home-page-clone/',
       'github' : 'https://github.com/balajisudarshan/netflix-home-page-clone'
     },
+    {
+      'img':'images/project.png',
+      'imgalt' : 'react js product page',
+      'name' : 'React js Product Page',
+      'description':'Created a responsive React js product page with Api intergration',
+      'livedemo' : 'https://e-com-product-page-243xed1t2-balajisudarshans-projects.vercel.app/',
+      'github' : 'https://github.com/balajisudarshan/EComProduct'
+    }
    
   ];
   
