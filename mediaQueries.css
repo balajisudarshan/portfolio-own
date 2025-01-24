@@ -83,7 +83,9 @@
     .info-text{
         display: flex;
         flex-direction: column;
+        
     }
+   
     #projects{
         margin-top: 20%;
     }
